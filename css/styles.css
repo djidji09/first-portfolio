@@ -6,15 +6,16 @@
   --text_color: #918ca4;
 }
 html {
-  font-size: 62.5%;
+  font-size: 62.5% !important;
 }
 body {
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 2.4rem;
+  font-family: Inter, Arial, Helvetica, sans-serif !important;
+  font-size: 2.4rem !important;
 }
 h1,
 h2,
 h3 {
+  font-weight: 700;
   color: var(--heading_color);
   margin-bottom: 1rem;
 }
