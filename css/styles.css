@@ -40,6 +40,11 @@ p {
 /* links */
 a {
   color: var(--third_color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--third_color);
+  text-decoration: none;
 }
 .link_arrow {
   text-transform: uppercase;
@@ -53,11 +58,4 @@ a {
 }
 .link_arrow:hover::after {
   margin-left: 10px;
-}
-a:hover {
-  color: var(--third_color);
-  text-decoration: none;
-}
-.try {
-  background-color: #918ca4;
 }
