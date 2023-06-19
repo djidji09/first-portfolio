@@ -59,3 +59,15 @@ a:hover {
 .link_arrow:hover::after {
   margin-left: 10px;
 }
+/* lists */
+ul {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+  color: var(--primary_color);
+  font-weight: bold;
+}
+.inline_list {
+  display: inline;
+  margin-right: 1rem;
+}
