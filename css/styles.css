@@ -14,6 +14,8 @@ body {
   font-family: Inter, Arial, Helvetica, sans-serif !important;
   font-size: 2.4rem !important;
   margin-left: 2rem !important;
+  color: whitesmoke;
+  background-color: black;
 }
 h1,
 h2,
@@ -60,18 +62,14 @@ a:hover {
   margin-left: 10px;
 }
 /* lists */
-ul {
+.navbar_list {
   list-style: none;
   margin-top: 0;
   padding-left: 0;
   color: var(--primary_color);
   font-weight: bold;
 }
-.inline_list {
+.navbar_item {
   display: inline;
   margin-right: 1rem;
-}
-img {
-  width: 50px;
-  margin-right: 700px;
 }
