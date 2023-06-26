@@ -1,9 +1,5 @@
 /* colors */
 :root {
-  --primary_color: #2584ff;
-  --secondery_color: #00d9ff;
-  --third_color: #ff3400;
-  --heading_color: #1b0670;
   --text_color: #918ca4;
 }
 /* typography */
@@ -13,24 +9,24 @@ html {
 body {
   font-family: Inter, Arial, Helvetica, sans-serif !important;
   font-size: 2.4rem !important;
-  margin-left: 2rem !important;
-  color: whitesmoke;
-  background-color: black;
+  background-color: beige;
 }
 h1,
 h2,
 h3 {
   font-weight: 700;
-  color: var(--heading_color);
+  color: black;
   margin-bottom: 1rem !important;
 }
 h1 {
   font-size: 7rem;
+  margin-top: 0.5rem;
 }
 h2 {
   font-size: 4rem;
 }
 h3 {
+  color: beige;
   font-size: 3rem;
 }
 p {
@@ -38,14 +34,17 @@ p {
   margin-top: 0;
   margin-left: 1rem;
 }
+header {
+  margin-top: 5rem;
+}
 
 /* links */
 a {
-  color: var(--third_color);
   text-decoration: none;
+  color: black;
 }
 a:hover {
-  color: var(--third_color);
+  color: ivory;
   text-decoration: none;
 }
 .link_arrow {
@@ -61,15 +60,59 @@ a:hover {
 .link_arrow:hover::after {
   margin-left: 10px;
 }
-/* lists */
+/* nav bar */
+.navbar {
+}
 .navbar_list {
+  position: fixed;
+  top: -2px;
+  padding: 0;
   list-style: none;
-  margin-top: 0;
-  padding-left: 0;
-  color: var(--primary_color);
+  margin: 0;
+  background-color: transparent;
   font-weight: bold;
+  height: 5rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 .navbar_item {
   display: inline;
   margin-right: 1rem;
+}
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+ul {
+  padding: 0;
+}
+/*scrool bar*/
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: bisque;
+  border-radius: 200px;
+}
+body::-webkit-scrollbar-track {
+  background-color: black;
+}
+body {
+  height: 200vh;
+}
+/* the footer*/
+footer {
+  background-color: rgb(29, 31, 32);
 }
