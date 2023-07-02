@@ -42,9 +42,11 @@ header {
 a {
   text-decoration: none;
   color: #5c5a5a;
+  transition: 300ms;
 }
 a:hover {
   color: black;
+  font-size: 3rem;
   text-decoration: none;
 }
 .link_arrow {
@@ -92,7 +94,7 @@ a:hover {
   );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
+  border-radius: 0 0 20px 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
