@@ -62,6 +62,7 @@ a:hover {
 }
 /* nav bar */
 .navbar {
+  z-index: 100;
 }
 .navbar_list {
   position: fixed;
