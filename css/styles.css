@@ -117,6 +117,29 @@ footer {
   background-color: rgb(29, 31, 32);
 }
 
+/* wave*/
+
+.custom-shape-divider-top-1688258564 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1688258564 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 86px;
+}
+
+.custom-shape-divider-top-1688258564 .shape-fill {
+  fill: beige;
+}
+
 /* media querries*/
 
 @media only screen and (max-width: 522px) {
