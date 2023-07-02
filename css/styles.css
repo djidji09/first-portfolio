@@ -119,8 +119,8 @@ footer {
 
 /* media querries*/
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: black;
+@media only screen and (max-width: 522px) {
+  a {
+    font-size: 1.5rem;
   }
 }
