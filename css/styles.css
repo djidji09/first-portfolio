@@ -41,10 +41,10 @@ header {
 /* links */
 a {
   text-decoration: none;
-  color: black;
+  color: #5c5a5a;
 }
 a:hover {
-  color: ivory;
+  color: black;
   text-decoration: none;
 }
 .link_arrow {
@@ -115,4 +115,9 @@ body {
 /* the footer*/
 footer {
   background-color: rgb(29, 31, 32);
+}
+
+/* media querries*/
+
+@media only screen and (min-width: 600px) {
 }
