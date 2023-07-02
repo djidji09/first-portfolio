@@ -110,12 +110,13 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background-color: black;
 }
-body {
-  height: 200vh;
-}
+
 /* the footer*/
 footer {
   background-color: rgb(29, 31, 32);
+}
+.footer {
+  margin-bottom: 0;
 }
 
 /* wave*/
@@ -147,4 +148,13 @@ footer {
   a {
     font-size: 1.5rem;
   }
+  .custom-shape-divider-top-1688258564 svg {
+    height: 50px;
+  }
+}
+
+/*testing*/
+
+body {
+  height: 200vh;
 }
