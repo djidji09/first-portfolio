@@ -150,6 +150,9 @@ footer {
   a {
     font-size: 1.5rem;
   }
+  a:hover {
+    font-size: 2rem;
+  }
   .custom-shape-divider-top-1688258564 svg {
     height: 50px;
   }
