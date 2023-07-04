@@ -9,14 +9,17 @@ html {
 body {
   font-family: Inter, Arial, Helvetica, sans-serif !important;
   font-size: 2.4rem !important;
-  background-color: beige;
+  background-color: var(--background_color);
+  transition: background_color 1s ease-out;
 }
 h1,
 h2,
 h3 {
   font-weight: 700;
-  color: black;
+  color: var(--heading_color);
   margin-bottom: 1rem !important;
+  text-transform: capitalize;
+  transition: color 2s ease-out;
 }
 h1 {
   font-size: 7rem;
@@ -26,13 +29,15 @@ h2 {
   font-size: 4rem;
 }
 h3 {
-  color: beige;
+  color: var(--background_color);
   font-size: 3rem;
+  transition: color 2s ease-out;
 }
 p {
   color: var(--text_color);
   margin-top: 0;
   margin-left: 1rem;
+  transition: color 2s ease-out;
 }
 header {
   margin-top: 5rem;
@@ -41,11 +46,14 @@ header {
 /* links */
 a {
   text-decoration: none;
-  color: #5c5a5a;
+  color: var(--link);
   transition: 300ms;
+  transition: color 2s ease-out;
+  transition: 500ms;
 }
+
 a:hover {
-  color: black;
+  color: var(--link_hover);
   font-size: 3.5rem;
   text-decoration: none;
 }
@@ -57,7 +65,7 @@ a:hover {
 .link_arrow::after {
   content: "-->";
   margin-left: 5px;
-  transition: 500ms;
+  transition: 1s;
 }
 .link_arrow:hover::after {
   margin-left: 10px;
@@ -82,10 +90,6 @@ a:hover {
   flex-wrap: nowrap;
   align-items: center;
 }
-.navbar_item {
-  display: inline;
-  margin-right: 1rem;
-}
 .glass {
   background: linear-gradient(
     135deg,
@@ -106,21 +110,22 @@ body::-webkit-scrollbar {
   width: 0.5rem;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: bisque;
+  background-color: var(--scroll);
   border-radius: 200px;
 }
 body::-webkit-scrollbar-track {
-  background-color: black;
+  background-color: var(--scroll_background);
+  transition: background_color 1s ease-out;
 }
 
 /* the footer*/
 footer {
-  background-color: rgb(29, 31, 32);
+  background-color: var(--footer_color);
+  transition: background_color 1s ease-out;
 }
 .footer {
   margin-bottom: 0;
 }
-
 /* wave*/
 
 .custom-shape-divider-top-1688258564 {
@@ -141,7 +146,7 @@ footer {
 }
 
 .custom-shape-divider-top-1688258564 .shape-fill {
-  fill: beige;
+  fill: var(--background_color);
 }
 
 /* media querries*/
@@ -156,6 +161,54 @@ footer {
   .custom-shape-divider-top-1688258564 svg {
     height: 50px;
   }
+}
+
+/* dropdown*/
+
+.dropdown {
+  list-style: none;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.15s ease-out;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2.5rem;
+  transform: translatex(-30%);
+  background-color: #121212;
+}
+.has_dropdown:focus-within .dropdown {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* themes */
+
+/*light */
+
+.light {
+  --background_color: beige;
+  --text_color: var(--text_color);
+  --heading_color: black;
+  --link: rgb(56, 54, 54);
+  --link_hover: black;
+  --footer_color: rgb(24, 24, 24);
+  --scroll: bisque;
+  --scroll_background: black;
+}
+
+/* dark */
+
+.dark {
+  --background_color: #121212;
+  --text_color: rgb(134, 134, 119);
+  --heading_color: beige;
+  --link: beige;
+  --link_hover: black;
+  --footer_color: beige;
+  --scroll: black;
+  --scroll_background: bisque;
 }
 
 /*testing*/
