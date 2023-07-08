@@ -118,13 +118,46 @@ body::-webkit-scrollbar-track {
   transition: background_color 1s ease-out;
 }
 
+/* typing effect */
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 17ch;
+  animation: typing 2s steps(17), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
 /* the footer*/
 footer {
   background-color: var(--footer_color);
   transition: background_color 1s ease-out;
 }
-.footer {
+p.footer {
   margin-bottom: 0;
+  color: var(--background_color);
 }
 /* wave*/
 
@@ -213,6 +246,6 @@ footer {
 
 /*testing*/
 
-body {
+/*body {
   height: 200vh;
 }
