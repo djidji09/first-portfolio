@@ -136,6 +136,8 @@ body::-webkit-scrollbar-track {
   font-family: monospace;
   font-size: 2em;
   text-transform: capitalize;
+  color: var(--heading_color);
+  transition: color 1.5s;
 }
 
 @keyframes typing {
