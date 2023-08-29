@@ -1,0 +1,44 @@
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border-radius: 50px;
+  transform: scale(0.9);
+  background-color: beige;
+  overflow: hidden;
+  position: relative;
+
+  transition: 500ms;
+}
+.card:hover {
+  transform: scale(1);
+  cursor: pointer;
+}
+.card img {
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.text-overlay {
+  position: absolute;
+  top: 50%; /* Position at the vertical center */
+  left: 50%; /* Position at the horizontal center */
+  transform: translate(-50%, -50%); /* Center the text */
+  color: white;
+  text-align: center;
+  width: 100%; /* Ensure full width */
+}
+.text-overlay h3 {
+  transition: 500ms;
+}
+
+.card:hover h3 {
+  font-size: 50px;
+}

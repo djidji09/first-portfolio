@@ -105,6 +105,9 @@ a:hover {
 ul {
   padding: 0;
 }
+li ,h1 ,h2,h3,h4{
+  text-transform: capitalize;
+}
 /*scrool bar*/
 body::-webkit-scrollbar {
   width: 0.5rem;
