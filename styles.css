@@ -44,7 +44,7 @@ header {
 }
 
 /* links */
-a {
+li a {
   text-decoration: none;
   color: var(--link);
   transition: 300ms;
@@ -52,13 +52,15 @@ a {
   transition: 500ms;
 }
 
-a:hover {
+li a:hover {
   color: var(--link_hover);
   font-size: 3.5rem;
   text-decoration: none;
 }
 .link_arrow {
+  color: var(--link_hovers);
   text-transform: uppercase;
+  text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -159,6 +161,7 @@ body::-webkit-scrollbar-track {
 footer {
   background-color: var(--footer_color);
   transition: background_color 1s ease-out;
+  height: 30vh;
 }
 p.footer {
   margin-bottom: 0;
