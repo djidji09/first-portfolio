@@ -11,7 +11,7 @@
   height: 200px;
   border-radius: 50px;
   transform: scale(0.9);
-  background-color: beige;
+  background-color: var(--background_color);
   overflow: hidden;
   position: relative;
 
@@ -25,6 +25,10 @@
   max-height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.logo img {
+  scale: 1;
+  object-fit: none;
 }
 .text-overlay {
   position: absolute;
@@ -41,4 +45,28 @@
 
 .card:hover h3 {
   font-size: 50px;
+}
+
+.light {
+  --background_color: beige;
+  --text_color: var(--text_color);
+  --heading_color: black;
+  --link: rgb(56, 54, 54);
+  --link_hover: black;
+  --footer_color: rgb(24, 24, 24);
+  --scroll: bisque;
+  --scroll_background: black;
+}
+
+/* dark */
+
+.dark {
+  --background_color: #121212;
+  --text_color: rgb(134, 134, 119);
+  --heading_color: beige;
+  --link: beige;
+  --link_hover: black;
+  --footer_color: beige;
+  --scroll: black;
+  --scroll_background: bisque;
 }

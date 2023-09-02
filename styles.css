@@ -38,6 +38,7 @@ p {
   margin-top: 0;
   margin-left: 1rem;
   transition: color 2s ease-out;
+  text-transform: capitalize;
 }
 header {
   margin-top: 5rem;
@@ -58,7 +59,7 @@ li a:hover {
   text-decoration: none;
 }
 .link_arrow {
-  color: var(--link_hovers);
+  color: var(--link_hoversfd);
   text-transform: uppercase;
   text-decoration: none;
   font-size: 2rem;

@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Djelouah youcef's portfolio</title>
-    <script src="main.js"></script>
 
     <!-- importing bootstrap css -->
     <link
@@ -23,47 +22,83 @@
       rel="stylesheet"
     />
     <!-- importing the style sheets-->
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="page4.css" />
 
     <!-- importing our javasctipt -->
     <script defer src="main.js"></script>
   </head>
   <body class="light">
-    <nav class="navbar">
+    <nav class="navbar container-fluid">
       <ul class="navbar_list glass">
-        <li class="navbar_item"><a href="index.html">main</a></li>
-        <li class="navbar_item"><a href="2.html">not yet</a></li>
-        <li class="navbar_item"><a href="3.html">theme</a></li>
-        <li class="navbar_item"><a href="about me.html">about me</a></li>
-        <li class="navbar_item"><a href="#contact us">Contact Us</a></li>
+        <li><a href="index.html">main</a></li>
+        <li><a href="2.html">hobbies</a></li>
+        <li class="has_dropdown">
+          <a id="swatch" href="#">theme</a>
+          <!-- <ul class="dropdown ">
+            <li class="dropdown_item"><a id="dark" href="#">dark</a></li>
+            <li class="dropdown_item"><a id="light" href="#">light</a></li>
+          </ul>
+        </li> -->
+        </li>
+
+        <li><a href="4.html">about me</a></li>
+        <li>
+          <a href="#contact us">Contact me</a>
+        </li>
       </ul>
     </nav>
-    <header>
-      <h1>this website is mine</h1>
-      <p>
-        i am learning at cs50x and Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Doloribus animi ut doloremque inventore enim,
-        possimus, ipsum mollitia consequatur impedit quis recusandae voluptatem
-        aliquam! Esse non a fuga impedit doloremque quis facere dolor soluta
-        vero vitae odio accusamus, perferendis neque tempora alias aliquid? Ea
-        mollitia animi nihil. Assumenda aut laboriosam ipsum.
-      </p>
-    </header>
+    <header></header>
     <main>
-      <h2>now this is gotta be nice</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquid
-        ex deleniti laborum, laboriosam aperiam dicta eos sequi maxime autem
-        facere esse, inventore quis. Error et nostrum eligendi cumque modi!
-      </p>
+      <div class="container">
+        <div class="card card1 glass">
+          <h2>who am i</h2>
+          <p>
+            i am an algerian student that loves coding and video editing and
+            image manipulation
+          </p>
+        </div>
+        <div class="card card2 glass">
+          <h2></h2>
+          <p></p>
+        </div>
+        <div class="card card3 glass">
+          <h2></h2>
+          <p></p>
+        </div>
+        <div class="card card4 glass">
+          <h2>studies</h2>
+          <p>
+            i studies computer sience in algeria but i did have too many math
+            classes that didnt help me grow as a programer and the learning
+            wasn't project based so all i learned was theories and a lot of math
+            then i discovered cs50 and it was an amazing experience so far the
+            teachers are very explanatory and you learn a lot from the project
+            of each week
+          </p>
+        </div>
+      </div>
     </main>
+
     <footer>
-      <h3 id="contact us">about me</h3>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-        repellat officia distinctio ratione ducimus, soluta autem consequuntur
-        inventore laudantium eveniet?
+      <div class="custom-shape-divider-top-1688258564">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <h3 id="contact us">contact me</h3>
+      <p class="footer">
+        you can contact me by going to the
+        <a href="3.html" class="link_arrow">contact me page</a> .
       </p>
     </footer>
     <!-- bootstrap javascript-->
