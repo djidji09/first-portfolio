@@ -8,6 +8,9 @@
   grid-template-columns: 2fr 1fr 1fr 2fr;
   grid-gap: 25px;
 }
+.card {
+  display: flex;
+}
 .card1 {
   grid-column: 1 / 4;
 }
@@ -19,6 +22,9 @@
 }
 .card4 {
   grid-column: 2 / 5;
+}
+.card center {
+  color: var(--heading_color);
 }
 .card a {
   text-decoration: none;
